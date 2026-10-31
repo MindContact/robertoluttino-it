@@ -39,6 +39,9 @@ h1, h2, h3 { font-family: var(--mono); line-height: 1.15; margin: 0; }
 /* Same box as <main>, so the hero text lines up with the sections below. */
 .hero-inner { max-width: var(--width); margin: 0 auto; padding: 0 var(--pad); }
 .prompt { margin-bottom: 1.2rem; font-family: var(--mono); color: var(--amber); letter-spacing: .05em; }
+.prompt { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.lang { font-family: var(--sans); font-size: .9rem; letter-spacing: 0; color: var(--amber); text-decoration-color: rgba(242, 165, 65, .5); }
+.lang:hover { text-decoration-color: var(--amber); }
 .cursor { animation: blink 1.1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .hero h1 { font-size: 2.3rem; letter-spacing: -.01em; }
